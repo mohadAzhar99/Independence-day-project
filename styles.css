@@ -1,0 +1,271 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ff5906, #ffffff , green);
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+.head-img{
+    background-image: url("flag1.jpeg");
+    background-size: contain;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header {
+    padding: 80px 20px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url('red-fort.jpeg') ;
+    background-size: contain;
+
+    width: 100%;
+    animation: fadeInDown 2s;
+}
+
+.header h1 {
+    font-size: 4em;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.header p {
+    font-size: 1.8em;
+    margin: 20px 0;
+}
+
+button {
+    padding: 12px 30px;
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.4em;
+    transition: transform 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+button:hover {
+    background-color: #e63946;
+    transform: scale(1.1);
+}
+
+.mark{
+    width: 500px;
+    margin-left: 32.5%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flag {
+    width: 100%;
+    max-width: 400px;
+    margin: 40px auto;
+    position: relative;
+    cursor: pointer;
+}
+
+.flag-strip {
+    height: 60px;
+    animation: wave 1.5s infinite ease;
+}
+
+.saffron {
+    background-color: #FF9933;
+}
+
+.white {
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.green {
+    background-color: #138808;
+}
+
+.ashoka-chakra {
+    position: absolute;
+    top: 50px;
+    left: 40%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    width: 75px;
+    height: 80px;
+    background: url('https://pngbasket.com/wp-content/uploads/2021/08/ashoka-chakra.png') no-repeat center;
+    background-size: contain;
+    animation: rotateImage  2.5s infinite;
+}
+
+.content {
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 40px 20px;
+    border-radius: 15px;
+}
+
+.content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    image-resolution: 500px;
+}
+.content p {
+    font-size: 1.2em;
+    line-height: 1.8em;
+    text-align: left;
+}
+
+.responsive-img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 1.5s ease;
+}
+.responsive-img:hover{
+    background-image: url("war-img.jpeg");
+    background-size: contain;
+
+}
+
+.freedom-fighters {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.fighter {
+    text-align: center;
+}
+
+.fighter img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+
+}
+
+.fighter p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.fighter img:hover {
+    transform: scale(1.1);
+}
+.fighter img:hover {
+    transform: scale(1.2) rotate(5deg); 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.info-box {
+    display: none;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    border-radius: 10px;
+    margin-top: 80px;
+    font-family: cursive;
+    left: 50%;
+    transform: translateY(-50%);
+    max-width: 300px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.head-link{
+    margin-top: -50px;
+
+    
+}
+.link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 25px;
+    background: linear-gradient(to right, #ff5906, #ffffff , green) ;
+    color: black;
+    font-size:15.5px;
+    text-decoration: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.link2{
+    /* margin-top: 50px; */
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 40px;
+    background-color: white;
+    color: black;
+    font-size: 17.5px;
+    text-decoration: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.title:hover{
+
+    background: linear-gradient( #ff5906, #ffffff , green) ;
+    -webkit-background-clip: text;
+    font-size: 45px;
+    -webkit-text-fill-color: transparent;
+}
+.info-box.active {
+    display: block;
+    animation: fadeInUp(0.1s)ease;
+}   
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes rotateImage {
+    from  {
+        transform: rotate(0deg);
+
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+
+
+@media (max-width: 768px) {
+    .flag {
+        width: 80%;
+    }
+    
+    .header h1 {
+        font-size: 2.5em;
+    }
+    
+    .header p {
+        font-size: 1.2em;
+    }
+    
+    button {
+        font-size: 1.1em;
+    }
+}
+
+
+
+
